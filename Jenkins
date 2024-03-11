@@ -5,12 +5,6 @@ pipeline
         maven 'maven-3.9'
     }
     stages{
-        stage("SCM Checkout")
-        {
-            steps{
-                git 'https://github.com/javahometech/my-app'
-            }
-        }
         stage("Maven Build")
         {
             steps{
